@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon info -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <meta name="theme-color" content="#4F6831">
+
+    <title>Flexbox 2 sample</title>
+    <meta name="description"
+        content="A sample website for the Flexbox-2 assignment and to show the dangers of Australian White Ibises">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital@0;1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <!-- there're no preset rules as to how to use header. I decided to place my hero image in the header. Some people prefer to put their <nav> in the header  -->
+    <header>
+        <picture>
+            <source srcset="images/hero-1600.jpg" media="(min-width: 901px)">
+            <source srcset="images/hero-900.jpg" media="(min-width: 481px)">
+            <source srcset="images/hero-480.jpg" media="(max-width: 480px)">
+            <img src="images/hero-900.jpg" alt="an Australian White Ibis or trash bird">
+        </picture>
+
+        <div class="overlay">
+            <h1>Trash Birds of Australia</h1>
+            <p>Bin chicken awareness</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="form/">Form</a></li>
+            <li><a href="about/">About</a></li>
+            <li><a href="https://youtu.be/dQw4w9WgXcQ?t=43">Donate</a></li>
+        </ul>
+    </nav>
+    <!-- main will limit everything to 60em or less, so remove elements that you would 
+        like to span the viewport -->
+    <main>
+        <article class="panel">
+            <div class="text-wrapper left">
+                <h2>Don't be deceived by these so-called birds</h2>
+                <p>The Australian White Ibis is the scourge of urban Australia. The ibis thrives in garbage and trash.
+                    Some even say it's the spirit animal of Facebook.
+                    All we know is that you should never look directly at one of these trash turkeys, as their cold
+                    stare
+                    will pierce your soul.
+                </p>
+                <a class="button">Donate Now</a>
+            </div>
+            <div class="image-wrapper">
+                <img src="images/walking-ibis-400.jpg" alt="white ibises stalking their prey">
+            </div>
+        </article>
+        <aside class="full-width">
+            <p>This is an aside. I'll maybe add a pull quote here.</p>
+        </aside>
+        <article class="panel">
+            <div class="text-wrapper">
+                <h2>Bin Chickens Be Gone</h2>
+                <p>Although you may be delighted at their trash-picking antics, climate change is coming, and that means
+                    these birds will soon be coming for you.</p>
+                <a class="button">Learn more</a>
+            </div>
+            <div class="image-wrapper left">
+                <img src="images/trash-eating-400.jpg" alt="a white ibis eating trash">
+            </div>
+        </article>
+    </main>
+    <div class="cards">
+        <div class="card">
+            <a>
+                <div class="image-wrapper"><img src="images/card-1-400.jpg" alt="white ibis landing on red garbage can">
+                </div>
+                <p><span>Picnic Pirate</span></p>
+            </a>
+        </div>
+        <div class="card">
+            <a>
+                <div class="image-wrapper"><img src="images/card-2-400.jpg" alt="white ibis flying up in the air">
+                </div>
+                <p><span>Trash Raptor</span></p>
+            </a>
+        </div>
+        <div class="card">
+            <a>
+                <div class="image-wrapper"><img src="images/card-3-400.jpg" alt="dirty ibises on a full garbage can">
+                </div>
+                <p><span>Dump Chook</span></p>
+            </a>
+        </div>
+        <div class="card">
+            <a>
+                <div class="image-wrapper"><img src="images/card-4-400.jpg" alt="ibis reaching into a garbage bin">
+                </div>
+                <p><span>Flying Rat</span></p>
+            </a>
+        </div>
+    </div>
+
+    <footer>I'm a footer. Just hanging around at the bottom of the page.</footer>
+</body>
+
+</html>
